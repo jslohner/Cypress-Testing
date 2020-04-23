@@ -83,4 +83,12 @@ describe('User Onboarding Form', () => {
 		cy.get('[data-error_messages="error_messages"]')
 			.contains(errorMessages.passEmpty)
 	})
+
+	it('check for terms validation error', () => {
+		cy.get('[data-terms_state="terms_state"]')
+			.check()
+			.uncheck()
+		cy.get('[data-error_messages="error_messages"]')
+			.contains(errorMessages.terms)
+	})
 })
