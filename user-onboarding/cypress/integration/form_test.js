@@ -12,6 +12,8 @@ describe('User Onboarding Form', () => {
 	})
 
 	it('can type a username', () => {
-		cy.get('')
+		cy.get('[data-username_input="username_input"]')
+			.type(username)
+			.should('have.value', username)
 	})
 })
