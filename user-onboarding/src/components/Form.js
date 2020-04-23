@@ -13,7 +13,7 @@ function Form(props) {
 	return (
 		<form className='form'>
 			<h2>New User</h2>
-			<div>
+			<div data-error_messages='error_messages'>
 				{<p>{errors.username}</p>}
 				{<p>{errors.email}</p>}
 				{<p>{errors.password}</p>}

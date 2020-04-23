@@ -37,7 +37,6 @@ const formSchema = yup.object().shape({
 		.min(6, 'Password needs a minimum of 6 characters'),
 	terms: yup
 		.boolean()
-		.required('test')
 		.oneOf([true], 'In order to proceed, you must agree to the terms of service by checking the checkbox')
 })
 
