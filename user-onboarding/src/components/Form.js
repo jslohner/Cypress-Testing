@@ -23,7 +23,7 @@ function Form(props) {
 			<label>Email: <input data-email_input='email_input' value={values.email} onChange={onInputChange} name='email' type='text'/></label>
 			<label>Password: <input data-password_input='password_input' value={values.password} onChange={onInputChange} name='password' type='text'/></label>
 			<label><input data-terms_state='terms_state' checked={values.terms} onChange={onCheckboxChange} name='terms' type='checkbox'/>Terms of Service</label>
-			<button onClick={onSubmit} disabled={submitAvailability}>Submit</button>
+			<button data-submit_button='submit_button' onClick={onSubmit} disabled={submitAvailability}>Submit</button>
 		</form>
 	);
 }

@@ -34,4 +34,10 @@ describe('User Onboarding Form', () => {
 			.check()
 			.should('have.checked')
 	})
+
+	it('can submit form', () => {
+		cy.get('[data-submit_button="submit_button"]')
+			.click()
+			.should('have.disabled')
+	})
 })
