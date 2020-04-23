@@ -22,4 +22,10 @@ describe('User Onboarding Form', () => {
 			.type(email)
 			.should('have.value', email)
 	})
+
+	it('can type a password', () => {
+		cy.get('[data-password_input="password_input"]')
+			.type(password)
+			.should('have.value', password)
+	})
 })
