@@ -16,4 +16,10 @@ describe('User Onboarding Form', () => {
 			.type(username)
 			.should('have.value', username)
 	})
+
+	it('can type an email', () => {
+		cy.get('[data-email_input="email_input"]')
+			.type(email)
+			.should('have.value', email)
+	})
 })
