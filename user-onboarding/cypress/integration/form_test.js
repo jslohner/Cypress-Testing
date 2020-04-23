@@ -28,4 +28,10 @@ describe('User Onboarding Form', () => {
 			.type(password)
 			.should('have.value', password)
 	})
+
+	it('can check terms of service checkbox', () => {
+		cy.get('[data-terms_state="terms_state"]')
+			.check()
+			.should('have.checked')
+	})
 })
